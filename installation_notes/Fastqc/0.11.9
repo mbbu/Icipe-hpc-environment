@@ -1,0 +1,31 @@
+### Fastqc
+A quality control tool for high throughput sequence data.
+
+## Information
+
+  * Version: 2.1.0
+  * Added: June, 2020
+  * Link: http://www.bioinformatics.babraham.ac.uk/projects/fastqc/
+
+## Usage 
+See versions of abyss which are available:
+  ` module avail fastqc`
+
+Load one version into your environment and run it:
+```
+$ module load fastqc/0.11.9
+
+$ fastqc
+```
+
+ ## Installation
+Notes from the sysadmin during installation:
+
+
+```
+
+$ cd /tmp
+$   wget http://www.bioinformatics.babraham.ac.uk/projects/fastqc/fastqc_v0.11.9.zip
+$   unzip fastqc_v0.11.9.zip
+$  sudo cp -r FastQC /opt/apps/fastqc/0.11.9
+$ sudo chmod +x /opt/apps/fastqc/0.11.9/fastqc
