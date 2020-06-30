@@ -1,0 +1,19 @@
+#%Module1.0#####################################################################
+##
+## bedtools modulefile
+## By Andrew ESpira <aespira@icipe.org>
+## June, 2020
+##
+
+set appname     bedtools
+set version     2.29.0
+set prefix      /opt/apps/${appname}/${version}
+set url         "https://bedtools.readthedocs.io/en/latest/"
+set msg         "Bedtools is a fast, flexible toolset for genome arithmetic.\nBedtools official site: $url\n"
+
+conflict        $appname
+
+module-whatis   $msg
+
+prepend-path    PATH    ${prefix}/bin
+
