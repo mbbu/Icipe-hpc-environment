@@ -1,0 +1,28 @@
+#%Module1.0
+#####################################################################
+##
+## argtable Modulefile
+## by Andrew Espira,
+## July, 2020
+##
+
+# for Tcl script use only
+set     appname         argtable
+set     version         2.0
+set     prefix          /opt/apps/${appname}
+set     url             "http://argtable.sourceforge.net/"
+set     msg             " Argtable is an ANSI C library for parsing GNU style c$
+
+proc ModulesHelp{ } {
+    puts stderr $msg
+}
+
+
+module-whatis $msg
+
+conflict $appname
+
+prepend-path    PATH        ${prefix}
+
+# vim: set sw=4 ts=4:
+
