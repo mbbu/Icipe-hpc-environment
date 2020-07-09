@@ -1,0 +1,18 @@
+#%Module1.0
+#####################################################################
+##
+## iqtree Modulefile
+## by Andrew espira
+## July, 2020
+##
+
+set appname     iqtree
+set version     1.5
+set prefix	/opt/apps/${appname}/${version}
+set exec_prefix ${prefix}
+set url         "http://www.iqtree.org/doc/Compilation-Guide/"
+set msg         "A fast and effective stochastic algorithm to infer phylogeneti$
+
+proc ModulesHelp{ } {
+    puts stderr $msg
+}
