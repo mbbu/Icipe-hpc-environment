@@ -1,0 +1,28 @@
+
+#%Module1.0#####################################################################
+##
+## glimmer modulefile
+## By Andrew espira
+##
+proc ModulesHelp { } {
+        global version prefix
+
+        puts stderr "\tglimmer - loads the glimmer package"
+        puts stderr "\n\tThis adds $prefix/* to several of the"
+        puts stderr "\tenvironment variables."
+        puts stderr "\n\tVersion $version\n"
+}
+
+module-whatis   "loads the glimmer statistics package"
+
+# for Tcl script use only
+set     appname         glimmer
+set     version         3
+set     prefix          /opt/apps/${appname}/${version}
+set     exec_prefix     ${prefix}
+
+conflict        glimmer
+
+prepend-path    PATH            ${exec_prefix}/bin
+prepend-path    PATH            ${exec_prefix}/scripts
+
