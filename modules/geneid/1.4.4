@@ -1,0 +1,16 @@
+#%Module1.0#####################################################################
+##
+## geneid modulefile
+## By Andrew espira
+## July, 2020
+##
+
+# for Tcl script use only
+set     appname         geneid
+set     version         1.4.4
+set     prefix          /opt/apps/${appname}/${version}
+set     exec_prefix     ${prefix}/bin
+
+conflict        geneid
+
+prepend-path    PATH            ${exec_prefix}
