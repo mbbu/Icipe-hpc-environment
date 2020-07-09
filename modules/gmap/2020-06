@@ -1,0 +1,19 @@
+#%Module1.0
+#####################################################################
+##
+## GMAP-GSNAP Modulefile
+## by Andrew espira
+## July, 2020
+##
+
+# for Tcl script use only
+set     appname         gmap
+set     version         2020-06-30
+set     prefix          /opt/apps/${appname}/${version}
+set     exec_prefix     ${prefix}/bin
+set     url             "http://research-pub.gene.com/gmap/"
+set     msg             "A Genomic Mapping and Alignment Program(GMAP) for mRNA$
+
+proc ModulesHelp{ } {
+    puts stderr $msg
+}
