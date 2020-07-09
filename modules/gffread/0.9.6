@@ -1,0 +1,19 @@
+#%Module1.0#####################################################################
+##
+## GFFRead modulefile
+## By Andrew espra
+## July, 2020
+##
+
+# for Tcl script use only
+set     appname         gffread
+set     version         0.9.6
+set     prefix          /opt/apps/${appname}/${version}
+set     url             "https://github.com/gpertea/gffread"
+set     msg             "GFFRead is a GFF/GTF parsing utility providing format $
+
+conflict    ${appname}
+
+module-whatis $msg
+
+prepend-path    PATH            ${prefix}
