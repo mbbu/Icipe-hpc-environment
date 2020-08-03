@@ -1,5 +1,5 @@
  ICIPE HPC Environment Modules
-This repo contains [Environment Modules](http://modules.sourceforge.net) used in [Icipe computing infrastucture](http://hpc01.icipe.org/wordress) infrastructure.
+This repo contains [Environment Modules](http://modules.sourceforge.net) used in [Icipe computing infrastucture](http://hpc01.icipe.org/wordpress) infrastructure.
 
 For a full list of software, including build and usage instructions, see the [list of software](http://hpc01.icipe.org/doku.php?id=wiki:list_of_software) on ICIPE's HPC wiki.
 
