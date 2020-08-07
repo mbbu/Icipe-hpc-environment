@@ -61,7 +61,7 @@ Now we can install it, we will use the `-b` and `-s` switches for *silent mode* 
 We can watch it install and show the following:
 
 ```
-PREFIX=/home/ubuntu/miniconda3
+PREFIX=/home/admin/miniconda3
 installing: python-3.7.3-h0371630_0 ...
 Python 3.7.3
 installing: ca-certificates-2019.1.23-0 ...
@@ -154,101 +154,15 @@ Ok, enough setup already! Lets install a tool cause I have project deadlines!
 
 ### 4.1 Install a tool
 
-Lets install samtools.. It's pretty useful..
+Lets install `BWA`.. It's pretty useful..
 
 To do that we use the `conda install <package-name>` command.
 
-```
-(base) >$ conda install samtools
-```
 
 Conda will work out all the things it needs to install as well as samtools to make sure it works.
 
-You'll see a whole lot of stuff, but then conda will ask you if you REALLY want to install `samtools`. Take note of all the other things it has to install.. Look closely, sometimes it may tell you it has to REMOVE things to be able to install what you want due to an incompatibility. We will look at how to get around these things later in section 5.
+You'll see a whole lot of stuff, but then conda will ask you if you REALLY want to install `bwa`. Take note of all the other things it has to install.. Look closely, sometimes it may tell you it has to REMOVE things to be able to install what you want due to an incompatibility.
 
-This is what you should see:
-
-```
-Collecting package metadata: done
-Solving environment: done
-
-## Package Plan ##
-
-  environment location: /home/ubuntu/miniconda3
-
-  added / updated specs:
-    - samtools
-
-
-The following packages will be downloaded:
-
-    package                    |            build
-    ---------------------------|-----------------
-    bzip2-1.0.6                |    h14c3975_1002         415 KB  conda-forge
-    ca-certificates-2019.3.9   |       hecc5488_0         146 KB  conda-forge
-    certifi-2019.3.9           |           py37_0         149 KB  conda-forge
-    conda-4.6.14               |           py37_0         2.1 MB  conda-forge
-    curl-7.64.1                |       hbc83047_0         138 KB
-    krb5-1.16.1                |       h173b8e3_7         1.4 MB
-    libcurl-7.64.1             |       h20c2e04_0         582 KB
-    libdeflate-1.0             |       h14c3975_1          43 KB  bioconda
-    libssh2-1.8.2              |       h22169c7_2         257 KB  conda-forge
-    openssl-1.1.1b             |       h14c3975_1         4.0 MB  conda-forge
-    samtools-1.9               |      h8571acd_11         636 KB  bioconda
-    ------------------------------------------------------------
-                                           Total:         9.7 MB
-
-The following NEW packages will be INSTALLED:
-
-  bzip2              conda-forge/linux-64::bzip2-1.0.6-h14c3975_1002
-  curl               pkgs/main/linux-64::curl-7.64.1-hbc83047_0
-  krb5               pkgs/main/linux-64::krb5-1.16.1-h173b8e3_7
-  libcurl            pkgs/main/linux-64::libcurl-7.64.1-h20c2e04_0
-  libdeflate         bioconda/linux-64::libdeflate-1.0-h14c3975_1
-  libssh2            conda-forge/linux-64::libssh2-1.8.2-h22169c7_2
-  samtools           bioconda/linux-64::samtools-1.9-h8571acd_11
-
-The following packages will be UPDATED:
-
-  ca-certificates    pkgs/main::ca-certificates-2019.1.23-0 --> conda-forge::ca-certificates-2019.3.9-hecc5488_0
-
-The following packages will be SUPERSEDED by a higher-priority channel:
-
-  certifi                                         pkgs/main --> conda-forge
-  conda                                           pkgs/main --> conda-forge
-  openssl              pkgs/main::openssl-1.1.1b-h7b6447c_1 --> conda-forge::openssl-1.1.1b-h14c3975_1
-
-
-Proceed ([y]/n)? y
-
-
-Downloading and Extracting Packages
-openssl-1.1.1b       | 4.0 MB    | ############################################################################ | 100%
-libssh2-1.8.2        | 257 KB    | ############################################################################ | 100%
-libdeflate-1.0       | 43 KB     | ############################################################################ | 100%
-samtools-1.9         | 636 KB    | ############################################################################ | 100%
-ca-certificates-2019 | 146 KB    | ############################################################################ | 100%
-krb5-1.16.1          | 1.4 MB    | ############################################################################ | 100%
-libcurl-7.64.1       | 582 KB    | ############################################################################ | 100%
-bzip2-1.0.6          | 415 KB    | ############################################################################ | 100%
-certifi-2019.3.9     | 149 KB    | ############################################################################ | 100%
-curl-7.64.1          | 138 KB    | ############################################################################ | 100%
-conda-4.6.14         | 2.1 MB    | ############################################################################ | 100%
-Preparing transaction: done
-Verifying transaction: done
-Executing transaction: done
-```
-
-
-Ok, so now we can check it out..
-
-```
-(base) >$ samtools --version
-
-samtools 1.9
-Using htslib 1.9
-Copyright (C) 2018 Genome Research Ltd.
-```
 
 Woohoo!
 
@@ -295,20 +209,18 @@ Note: To use BWA, you need to first index the genome with `bwa index'.
 To remove a tool is simple. Just use the `conda remove` instruction.
 
 ```
-(base) >$ conda remove samtools
+(base) >$ conda remove bwa
 
 ```
 
 You'll have to acknowledge that you actually want to remove samtools.
 
-Now try to run samtools..
+Now try to run bwa.
 
 ```
-(base) >$ samtools
+(base) >$ bwa
 
-Command 'samtools' not found, but can be installed with:
-
-sudo apt install samtools
+Command 'bwa' not found
 ```
 It's not there anymore.. Cool..
 
