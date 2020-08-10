@@ -6,7 +6,7 @@ This pipeline is designed to complete circular bacterial genomes using a samplin
 
 Since CCBGpipe implements many analytical tools, we strongly recommend you to run it with Docker. Alternatively, you can install all dependencies as listed in the Installation section.
 
-``git clone https://github.com/jade-nhri/CCBGpipe.git``
+``git clone https://github.com/espirado/CCBGpipe.git``
 
 ``cd CCBGpipe``
 
