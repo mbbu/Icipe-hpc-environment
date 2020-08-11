@@ -1,5 +1,5 @@
 # CCBGpipe
-This pipeline is designed to complete circular bacterial genomes using a sampling strategy from a sinlge MinION with barcoding
+This pipeline is designed to complete circular bacterial genomes using a sampling strategy from a single MinION with barcoding.
 
 
 **To run with Docker**
@@ -14,7 +14,7 @@ Since CCBGpipe implements many analytical tools, we strongly recommend you to ru
 
 ``docker run -h ccbgpipe --name ccbgpipe -t -i -v /:/MyData ccbgpipe:v1 /bin/bash``
 
-    Inside the docker: root@ccbgpipe:/# 
+    Inside the Docker: root@ccbgpipe:/# 
     To install java:
         apt-get update
         apt-get install -y software-properties-common
@@ -133,6 +133,3 @@ Installation
 ``runConsensus.py path-to-fast5 (e.g., runConsensus.py ../fast5/)``
 
 ``finalize.py outpath (e.g., finalize.py ../results)``
-
-
-
