@@ -28,4 +28,4 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 
-![server status](https://github.com/mbbu/Hpc_environment_modules/blob/master/images/image.md)
+![server status](https://github.com/mbbu/Hpc_environment_modules/blob/master/images/status.png)
