@@ -1,7 +1,7 @@
  ICIPE HPC Environment Modules
 This repo contains [Environment Modules](http://modules.sourceforge.net) used in [Icipe computing infrastucture](https://hpc01.icipe.org/) infrastructure.
 
-For a full list of software, including build and usage instructions, see the [list of software](http://hpc02.icipe.org/doku.php) on ICIPE's HPC wiki.
+For a full list of software, including build and usage instructions.
 
 ## Assumptions
 These modules load and unload programs installed in the `/opt/apps/$SOFTWARE/$SOFTWARE_VERSION` directory.
@@ -9,7 +9,7 @@ These modules load and unload programs installed in the `/opt/apps/$SOFTWARE/$SO
 For example, in our infrastructure, *Nextflow 19,0+* is installed in `/opt/apps/nextflow/19.0+`.
 
 ## Updates
-We do updates 
+Package version(updates) are installed upon user request 
 
 ## License
 Copyright (C) 2020 International Centre of Insect Physiology and Ecology (icipe). All rights reserved
@@ -27,7 +27,7 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-[Status dashboard](http://10.0.0.215:3000/grafana/d/rYdddlPWk/node-exporter-full?orgId=1&refresh=1m&var-DS_PROMETHEUS=default&var-job=node_exporter&var-node=localhost:9100&var-diskdevices=%5Ba-z%5D%2B%7Cnvme%5B0-9%5D%2Bn%5B0-9%5D%2B&kiosk)
+[Status dashboard](http://10.0.0.215:3000/grafana/d/yrrYdddlPWk/hpc01-monitoring-dash?orgId=1&refresh=1m)
 
 
 ![server status](https://github.com/mbbu/Hpc_environment_modules/blob/master/images/status.png)
