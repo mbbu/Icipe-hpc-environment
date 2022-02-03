@@ -3,8 +3,8 @@ This repo contains [Environment Modules](http://modules.sourceforge.net) used in
 
 For a full list of software, including build and usage instructions.
 
-## Assumptions
-These modules load and unload programs installed in the `/opt/apps/$SOFTWARE/$SOFTWARE_VERSION` directory.
+## Usage
+ module load and unload programs installed in the `/opt/apps/$SOFTWARE/$SOFTWARE_VERSION` directory.
 
 For example, in our infrastructure, *Nextflow 19,0+* is installed in `/opt/apps/nextflow/19.0+`.
 
